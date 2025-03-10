@@ -3,6 +3,7 @@ package com.cursojava.secao10;
 import java.util.Objects;
 
 public class Boxing_Unboxing_WrapperClass {
+
 //   Boxing (Encaixotamento) : É o processo de conversão de um objeto tipo valor para um objeto tipo refereência
 //   compatível.
 //   Unboxing: É o processo de conversão de um objeto tipo refeência para um objeto tipo valor compatível.
@@ -27,6 +28,8 @@ public class Boxing_Unboxing_WrapperClass {
 //        System.out.println(y);
 //    }
 
+    public static void main(String[] args) {
 
+    }
 
 }
