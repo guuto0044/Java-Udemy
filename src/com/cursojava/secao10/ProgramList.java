@@ -38,12 +38,12 @@ public class ProgramList {
 
         // Retorna Pessoas com apenas com a primeira Latra L:
         System.out.println("---------------------");
-        List<String> result = list.stream().filter(x -> x.charAt(0) == 'L').collect(Collectors.toList());
+        List<String> result = list.stream().filter(x -> x.charAt(0) == 'L').toList();
 
         for (String l : result){
             System.out.println(l);
         }
-
+//      Encontra o primeiro o dado buscado com a letra informado, caso não exista, retorna "Null".
         System.out.println("---------------------");
         String name = list.stream().filter(x -> x.charAt(0) == 'J').findFirst().orElse(null);
         System.out.println(name);
