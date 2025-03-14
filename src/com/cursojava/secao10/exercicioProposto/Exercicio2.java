@@ -48,3 +48,4 @@ public class Exercicio2 {
         return list.stream().anyMatch(x -> x == n);
     }
 }
+
