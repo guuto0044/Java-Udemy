@@ -8,7 +8,6 @@ public class Exercicio1 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        int cont = -1;
 
         System.out.println("How Many Numbers will you insert: ");
         int n = sc.nextInt();
