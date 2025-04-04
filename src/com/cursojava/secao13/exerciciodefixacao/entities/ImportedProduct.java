@@ -23,7 +23,7 @@ public class ImportedProduct extends Product{
 
     @Override
     public String priceTag(){
-        return getName() + " $ " + totalPrice() + "(Customs free: $" + customFee + ")" + "\n";
+        return getName() + " $ " + totalPrice() + " (Customs free: $" + customFee + ")" + "\n";
     }
 
     public Double totalPrice(){
