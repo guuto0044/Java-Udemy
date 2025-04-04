@@ -84,7 +84,6 @@ public class Order {
         }
 
         sb.append("Total price: $" + totalPrice());
-
         return sb.toString();
     }
 }
