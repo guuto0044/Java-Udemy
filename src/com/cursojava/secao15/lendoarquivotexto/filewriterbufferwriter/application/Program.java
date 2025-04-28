@@ -13,7 +13,7 @@ public class Program {
 
         String [] lines = new String[] {"Hey it's a text", "Good Afternoon", "Good Night"};
 
-        String path = "/Users/.../.../...";
+        String path = "/Users/augustocesarsouza/Documents/...";
 
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(path,true))){  // Garante que não vai recriar o arquivo.
 
@@ -25,5 +25,4 @@ public class Program {
             e.printStackTrace();
         }
     }
-}
 }
