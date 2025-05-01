@@ -2,20 +2,26 @@ package com.cursojava.secao16.interfaces.exerciciofixacao.model.entities;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+
 
 public class Contract {
 
     private Integer number;
     private LocalDate date;
-    private Double valueTotal;
+    private Double totalValue;
 
-    private final List<Installment>installments = new ArrayList<>();
+    List<Installment>installments = new ArrayList<>();
 
-    public Contract(Integer number, LocalDate date, Double valueTotal) {
+    public Contract(){
+
+    }
+
+    public Contract(Integer number, LocalDate date, Double totalValue) {
         this.number = number;
         this.date = date;
-        this.valueTotal = valueTotal;
+        this.totalValue = totalValue;
     }
 
     public Integer getNumber() {
@@ -34,12 +40,12 @@ public class Contract {
         this.date = date;
     }
 
-    public Double getValueTotal() {
-        return valueTotal;
+    public Double getTotalValue() {
+        return totalValue;
     }
 
-    public void setValueTotal(Double valueTotal) {
-        this.valueTotal = valueTotal;
+    public void setTotalValue(Double totalValue) {
+        this.totalValue = totalValue;
     }
 
     public List<Installment> getInstallments() {

@@ -5,7 +5,8 @@ import java.time.format.DateTimeFormatter;
 
 public class Installment {
 
-   public static  DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    public static final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
 
     private LocalDate dueDate;
     private Double amount;
@@ -19,11 +20,11 @@ public class Installment {
         this.amount = amount;
     }
 
-    public LocalDate getDueDate() {
+    public LocalDate getdueDate() {
         return dueDate;
     }
 
-    public void setDueDate(LocalDate dueDate) {
+    public void setdueDate(LocalDate dueDate) {
         this.dueDate = dueDate;
     }
 
@@ -37,6 +38,6 @@ public class Installment {
 
     @Override
     public String toString() {
-        return dueDate.format(dtf) + " - " + amount;
+        return dtf.format(dueDate) + " - " + amount;
     }
 }
