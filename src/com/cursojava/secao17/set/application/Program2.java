@@ -1,6 +1,5 @@
 package com.cursojava.secao17.set.application;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Set;
 import java.util.TreeSet;

@@ -21,8 +21,8 @@ public class RentalService {
 
 
     public void processInvoice(CarRental carRental){
-
-        double min = Duration.between(carRental.getStart(), carRental.getFinish()).toMinutes(); //Encotra a duaração entre dois instantes
+        //Encotra a duaração entre dois instantes
+        double min = Duration.between(carRental.getStart(), carRental.getFinish()).toMinutes();
         double hours =  min/60; // Calcula a fração para elevar o valor para hora exata.
 
         double basicPayment;

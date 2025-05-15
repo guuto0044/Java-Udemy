@@ -11,7 +11,9 @@ public class Program {
 
     public static void main(String[] args) {
 
-        String [] lines = new String[] {"Hey it's a text", "Good Afternoon", "Good Night"};
+        String [] lines = new String[] {
+                "Hey it's a text", "Good Afternoon", "Good Night"
+        };
 
         String path = "/Users/augustocesarsouza/Documents/...";
 

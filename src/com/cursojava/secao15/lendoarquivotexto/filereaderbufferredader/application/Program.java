@@ -8,23 +8,20 @@ import java.io.IOException;
 public class Program {
     public static void main(String[] args) {
 
-//        BufferReder: Implementa otimizações.
-//        FileReader: Sequencia de leitura a partir de um arquivo.
+        String path = "/Users/augustocesarsouza/Documents/exemplo1.txt";
 
-        String path = "/Users/.../.../...";
+        try (BufferedReader br = new BufferedReader(new FileReader(path))){
 
-        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+            String line = br.readLine();
 
-            String line = br.readLine(); // Lê uma linha do arquivo.
-
-            while (line != null) {
+            while (line != null){
                 System.out.println(line);
                 line = br.readLine();
             }
 
-        } catch (IOException e) {
-            System.out.println("Error: " + e.getMessage());
+        } catch (IOException e){
+            System.out.println(e.getMessage());
         }
-    }
 
+    }
 }
